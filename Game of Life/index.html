@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game of Life</title>
+<!--    Style   -->
+    <link rel="stylesheet" href='game.css'>
+</head>
+<body>
+
+<div class='controls-wrapper'>
+
+			width: <input type='number' id='width' value='60'>
+			height: <input type='number' id='height' value='60'>
+			speed (FPS): <input type='number' id='fps' value='20' min='5'>
+		</div>
+<div id='board'>
+    </div>
+
+<div>
+    <h2>Click on table cells to toggle the cells as alive or dead.</h2>
+    <h3>Click the Start/Stop Reproducing button to Start and Stop</h3>
+        <Input type='button' id='btnstartstop' value='Start Reproducing' onclick='startStopGol();'/>
+        <Input type='button' id='btnreset' value='Reset Board' onclick='resetBoard();'/>
+</div>
+<!--    Script  -->
+<script src='game.js'></script>
+</body>
+</html>
